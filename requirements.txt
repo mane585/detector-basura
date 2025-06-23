@@ -1,5 +1,5 @@
 flask
 torch
-torchvision==0.17.2
+torchvision
 opencv-python-headless==4.9.0.80
 requests
