@@ -8,7 +8,7 @@ app = Flask(__name__)
 ESP32_URL = "http://192.168.1.100"  # Cambia esto por la IP de tu ESP32
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', trust_repo=True)
-cap = cv2.VideoCapture(1)  # Usa cámara externa
+cap = cv2.VideoCapture(0)  # Usa cámara externa
 
 def gen_frames():
     while True:

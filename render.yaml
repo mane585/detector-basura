@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: deteccion-botellas
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    autoDeploy: true
+    region: oregon
